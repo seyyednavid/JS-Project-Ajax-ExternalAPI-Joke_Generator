@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Chuck Norris Joke Generator</title>
+    <style>
+      ul {
+        list-style: none;
+        line-height: 2rem;
+      }
+      ul li {
+        color: #ccc;
+      }
+      ul li:first-child {
+        font-size: 25px;
+        color: #333;
+        line-height: 2.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Chuck Norris Joke Generator</h2>
+      <form action="">
+        <div>
+          <label for="categories">Choose the joke category:</label>
+          <select id="categories">
+            <option value="all" selected>Random</option>
+            <option value="animal">Animal</option>
+            <option value="career">Career</option>
+            <option value="celebrity">Celebrity</option>
+            <option value="dev">Development</option>
+            <option value="explicit">Explicit</option>
+            <option value="fashion">Fashion</option>
+            <option value="food">Food</option>
+            <option value="history">History</option>
+            <option value="money">Money</option>
+            <option value="movie">Movie</option>
+            <option value="music">Music</option>
+            <option value="political">Political</option>
+            <option value="religion">Religion</option>
+            <option value="science">Science</option>
+            <option value="sport">Sport</option>
+            <option value="travel">Travel</option>
+          </select>
+        </div>
+        <div>
+          <button class="get-jokes">Get Jokes</button>
+        </div>
+      </form>
+      <ul class="jokes"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
